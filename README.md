@@ -1,2 +1,2 @@
 # LeetQuestions
-  All possible leetcode questions and solutions
+  All possible code.leetcode questions and solutions
