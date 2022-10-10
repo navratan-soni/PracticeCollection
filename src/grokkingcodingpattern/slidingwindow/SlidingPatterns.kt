@@ -1,7 +1,7 @@
 package grokkingcodingpattern.slidingwindow
 
 fun main() {
-    SlidingPatterns.LargestSubStringAfterReplacingKLetters().run()
+    SlidingPatterns.LongestSubarraywithOnesAfterReplacement().run()
 }
 
 object SlidingPatterns {
@@ -193,6 +193,10 @@ object SlidingPatterns {
     }
 
     internal class LongestSubarraywithOnesAfterReplacement {
+
+        fun run () {
+            println(LongestSubarraywithOnesAfterReplacement("100111100000", 2))
+        }
 
         private fun LongestSubarraywithOnesAfterReplacement(str: String, maxSubAllowed: Int): Int {
 
