@@ -191,4 +191,28 @@ object SlidingPatterns {
             return maxWidnowLenght
         }
     }
+
+    internal class LongestSubarraywithOnesAfterReplacement {
+
+        private fun LongestSubarraywithOnesAfterReplacement(str: String, maxSubAllowed: Int): Int {
+
+            var windowStart = 0
+            var maxOnesCount = 0
+            var maxLength = 0
+
+            for(windowEnd in str.indices) {
+                if(str[windowEnd] == '1') {
+                    maxOnesCount++
+                }
+
+                if (windowEnd - windowStart + 1 - maxOnesCount > maxSubAllowed) {
+                    if (str[windowStart] == '1')
+                        maxOnesCount--
+                    windowStart++
+                }
+                maxLength = Math.max(maxLength, windowEnd - windowStart + 1)
+            }
+            return maxLength
+        }
+    }
 }
