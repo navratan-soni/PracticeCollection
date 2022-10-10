@@ -195,7 +195,8 @@ object SlidingPatterns {
     internal class LongestSubarraywithOnesAfterReplacement {
 
         fun run () {
-            println(LongestSubarraywithOnesAfterReplacement("100111100000", 2))
+            println(LongestSubarraywithOnesAfterReplacement("100111100000", 2) == 7)
+            println(LongestSubarraywithOnesAfterReplacement("101011111110", 1) == 9)
         }
 
         private fun LongestSubarraywithOnesAfterReplacement(str: String, maxSubAllowed: Int): Int {
